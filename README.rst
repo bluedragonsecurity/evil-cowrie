@@ -30,6 +30,7 @@ Suppose you have a linux vps and you get access to router of your victim's netwo
 .. code-block:: bash
 
 git clone https://github.com/bluedragonsecurity/evil_cowrie.git
+
 cd evil_cowrie
 
 
@@ -45,6 +46,7 @@ Then you need to redirect outgoing ssh traffic from your interface from port 22 
 
 .. code-block:: bash
 chmod +x iptables.sh
+
 ./iptables.sh
 
 
