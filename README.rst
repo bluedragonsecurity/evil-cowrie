@@ -6,6 +6,7 @@ Cowrie's Original Programmer : Michel Oosterhof
 Modified by : Wisdom (Antonius)
 
 https://www.bluedragonsec.com
+
 https://github.com/bluedragonsecurity
 
 This cowrie modification is suitable for ssh MITM attack.
