@@ -15,11 +15,13 @@ Evil cowrie works as an ssh proxy that will record the username, ssh password an
 
 
 1. MITM by Arp Cache Poisoning
+
 You got root on a linux machine in a subnet then you do arp cache poison in that subnet, where every traffic to internet will be redirected to your linux machine.
 Just install Evil Cowrie and do iptables redirect for outgoing ssh connection to port 2222, all ssh password, username and commands will be recorded in your linux 
 machine using Evil Cowrie
 
 2. MITM by modifying Victim's Gateway Network Routing
+
 Suppose you have a linux vps and you get access to router of your victim's network, Just modify the router's routing table so that internet traffic passes through your VPS before reaching the internet. Install and run Evil Cowrie in your vps and do iptables redirect for outgoing ssh connection to port 2222
 
 
