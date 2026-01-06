@@ -25,7 +25,8 @@ Suppose you have a linux vps and you get access to router of your victim's netwo
 
 **How to run this ?**
 
-.. code-block::
+.. code-block:: bash
+
 git clone https://github.com/bluedragonsecurity/evil_cowrie.git
 cd evil_cowrie
 
@@ -33,30 +34,29 @@ cd evil_cowrie
 Evil cowrie needs root privilege to runs
 To keep it runs after your session ended, run as root : 
 
-``
+.. code-block:: bash
 PYTHONPATH=src nohup ./cowrie-env/bin/python3 -m twisted --log-file=var/log/cowrie/twisted.log cowrie > /dev/null 2>&1 &
-``
+
 
 
 Then you need to redirect outgoing ssh traffic from your interface from port 22 to port 2222, run as root :
 
-``
+.. code-block:: bash
 chmod +x iptables.sh
 ./iptables.sh
-``
+
 
 Just wait the Evil Cowrie to harvest ssh username and password from the victim's network. 
 When there is any successful login attempt, it will be recorded in :
 
-``
+.. code-block:: bash
 evil_cowrie/var/log/cowrie/cowrie.json
-``
 
 and
 
-``
+.. code-block:: bash
 evil_cowrie/var/log/cowrie/twisted.log
-``
+
 
 Just search for the string : success
 
