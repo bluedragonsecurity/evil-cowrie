@@ -1,4 +1,4 @@
-<b>Evil Cowrie</b>
+Evil Cowrie
 ######
 
 Cowrie's Original Programmer : Michel Oosterhof
