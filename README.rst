@@ -25,6 +25,8 @@ machine using Evil Cowrie
 
 Suppose you have a linux vps and you get access to router of your victim's network, Just modify the router's routing table so that internet traffic passes through your VPS before reaching the internet. Install and run Evil Cowrie in your vps and do iptables redirect for outgoing ssh connection to port 2222
 
+3. Another Possibilities : MITM by BGP Hijacking, MITM by DNS Hijacking, MITM by DNS Spoof, MITM by Rogue DHCP Server (after dhcp exhaustion attack)
+
 
 **How to run this ?**
 
